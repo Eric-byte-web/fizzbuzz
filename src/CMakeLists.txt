@@ -1,10 +1,6 @@
-# --- Import tools ----
-
-include(../cmake/CPM.cmake)
-
-# ---- Dependencies ----
-
-# ---- Create standalone executable ----
-
-add_executable(hallo main.cpp)
-target_link_libraries(hallo PRIVATE project_options project_warnings fmt::fmt spdlog::spdlog)
+add_subdirectory(1)
+add_subdirectory(2)
+add_subdirectory(3)
+add_subdirectory(3-tests)
+add_subdirectory(4)
+add_subdirectory(4-tests)
