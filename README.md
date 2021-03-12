@@ -1,4 +1,4 @@
-# Verschiedene Ansätze für [FizzBuzz](https://de.wikipedia.org/wiki/Fizz_buzz) in C++
+# Verschiedene Ansätze für [Fizz Buzz](https://de.wikipedia.org/wiki/Fizz_buzz) in C++
 
 Die Spieler sitzen in der Regel im Kreis. Der als erste bestimmte Spieler sagt die Zahl 1, und 
 jeder Spieler zählt von da an reihum eine Zahl weiter. Jede durch drei teilbare Zahl wird jedoch 
