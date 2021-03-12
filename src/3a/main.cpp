@@ -4,9 +4,11 @@
 #include <vector>
 #include <map>
 
+#include <fmt/format.h>
+
 void print(const std::string s)
 {
-  std::cout << s << std::endl;
+  fmt::print("{}\n", s);
 }
 
 int main()
@@ -32,21 +34,7 @@ int main()
       "Fizz Buzz"
     };
 
-    print(werte[0]);
-    print(werte[1]);
-    print(werte[2]);
-    print(werte[3]);
-    print(werte[4]);
-    print(werte[5]);
-    print(werte[6]);
-    print(werte[7]);
-    print(werte[8]);
-    print(werte[9]);
-    print(werte[10]);
-    print(werte[11]);
-    print(werte[12]);
-    print(werte[13]);
-    print(werte[14]);
+    for (const auto wert : werte) { print(wert); }
   }
   {
     // Ansatz 2: std::array aus Standardbibliothek (starre/statische Liste)
@@ -70,21 +58,7 @@ int main()
       "Fizz Buzz"
     };
 
-    print(werte[0]);
-    print(werte[1]);
-    print(werte[2]);
-    print(werte[3]);
-    print(werte[4]);
-    print(werte[5]);
-    print(werte[6]);
-    print(werte[7]);
-    print(werte[8]);
-    print(werte[9]);
-    print(werte[10]);
-    print(werte[11]);
-    print(werte[12]);
-    print(werte[13]);
-    print(werte[14]);
+    for (const auto wert : werte) { print(wert); }
   }
   {
     // Ansatz 3: dynamischer Liste (std::vector)
@@ -107,22 +81,7 @@ int main()
       "Fizz Buzz"
     };
 
-    // Nachteil: Diskrepanz zwischen Index und Wert (0 -> "1"; 1 -> "2" ...)
-    print(werte[0]);
-    print(werte[1]);
-    print(werte[2]);
-    print(werte[3]);
-    print(werte[4]);
-    print(werte[5]);
-    print(werte[6]);
-    print(werte[7]);
-    print(werte[8]);
-    print(werte[9]);
-    print(werte[10]);
-    print(werte[11]);
-    print(werte[12]);
-    print(werte[13]);
-    print(werte[14]);
+    for (const auto wert : werte) { print(wert); }
   }
 
   {
@@ -144,20 +103,6 @@ int main()
       { 14, "14" },
       { 15, "Fizz Buzz" }
     };
-    print(werte[0]);
-    print(werte[1]);
-    print(werte[2]);
-    print(werte[3]);
-    print(werte[4]);
-    print(werte[5]);
-    print(werte[6]);
-    print(werte[7]);
-    print(werte[8]);
-    print(werte[9]);
-    print(werte[10]);
-    print(werte[11]);
-    print(werte[12]);
-    print(werte[13]);
-    print(werte[14]);
+     for (const auto wert : werte) { print(wert.second); }
   }
 }

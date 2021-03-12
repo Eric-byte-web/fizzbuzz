@@ -12,5 +12,5 @@ CPMAddPackage(
 
 # ---- Create standalone executable ----
 
-add_executable(fizzbuzz-3-tests main.cpp)
-target_link_libraries(fizzbuzz-3-tests PRIVATE project_options project_warnings Catch2)
+add_executable(fizzbuzz-3a main.cpp)
+target_link_libraries(fizzbuzz-3a PRIVATE project_options project_warnings Catch2 fmt)
