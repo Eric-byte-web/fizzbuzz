@@ -73,7 +73,6 @@ TEST_CASE("Fizz Buzz mit Testwerten (Ground Truth) in Dictionary", "[fizzbuzz]")
   REQUIRE(fizzbuzz(15) == werte[15]);
 }
 
-
 TEST_CASE("Fizz Buzz mit Testwerten (Ground Truth) in Dictionary mit Schleife", "[fizzbuzz]")
 {
   std::map<int, std::string> werte{
